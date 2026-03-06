@@ -3,8 +3,6 @@ const app = express();
 app.listen(8080, () => console.log("Server Started on port 8080"));
 app.set("view engine", "ejs");
 app.set("views", "views");
-app.listen(5000, () => console.log("Server Started on port 5000"));
-
 app.use(express.urlencoded({ extended: true }));
 
 let users = [
