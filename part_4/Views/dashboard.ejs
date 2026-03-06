@@ -10,6 +10,9 @@
 <body>
     <h2>Dashboard | <a href="/login">Login</a></h2>
 
+    <% users.forEach(user=> { %>
+        <li><%= user.name %>-<%= user.email %>-<%= user.password %></li>
+        <% }) %>
 </body>
 
 </html>
